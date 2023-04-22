@@ -1,21 +1,21 @@
-
-import Greet from './components/Greet'
-import Greet1 from './components/Greet1'
-import Welcome from './components/Welcome'
+import React from 'react'
 import Navbar from './Navbar/Navbar'
-import One from './components/One'
-import Message from './Message/Message'
+
+import CompA from'./Props/CompA'
+//import CompA1 from'./PropsEx/CompA1'
+
+import User from './User/User'
 
  let App = () => {
   return (<div>
-    <Greet1 />
-    <Greet></Greet>
-    <Welcome />
-
+    
+     
     <Navbar></Navbar>
-    <One></One>
-      
-    <Message />
+    
+    <CompA />
+    <User />
+    
+    
 
     </div>)
   

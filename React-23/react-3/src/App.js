@@ -1,22 +1,16 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
+import Message from './Message/Message'
 
-import CompA from'./Props/CompA'
-//import CompA1 from'./PropsEx/CompA1'
-
-import User from './User/User'
 
  let App = () => {
   return (<div>
-    
-     
     <Navbar></Navbar>
-    
-    <CompA />
-    <User />
-    
-    
+    <h1>React State Component</h1>
 
+    <Message />
+
+    <button className="btn btn-success">Test</button>
     </div>)
   
  }

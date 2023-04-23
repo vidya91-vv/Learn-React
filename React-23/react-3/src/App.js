@@ -12,7 +12,6 @@ import Product from './Product/Product'
     <Navbar />
     <Product />
 
-    <button className="btn btn-success">Test</button>
     </div>)
   
  }

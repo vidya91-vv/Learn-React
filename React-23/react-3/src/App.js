@@ -5,12 +5,14 @@ import Navbar from './Navbar/Navbar'
 //import Counter from './Counter/Counter'
 //import Counter1 from './Counter/Counter1'
 import Product from './Product/Product'
+import Product1 from './Product/Product1'
 
 
  let App = () => {
   return (<div>
     <Navbar />
     <Product />
+    <Product1 />
 
     </div>)
   

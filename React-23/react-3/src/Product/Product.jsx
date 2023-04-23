@@ -32,8 +32,8 @@ class Product extends Component {
                     <td>{this.state.product_Name}</td>
                     <td><img src={this.state.image} /></td>
                     <td>{this.state.price}</td>
-                    <td><i class="fa fa-minus-circle"></i>{this.state.qty}
-                    <i class="fa fa-plus-circle" onClick={this.incrHandler}></i></td>
+                    <td><i class="fa fa-minus-circle" onClick={this.incrHandler}></i>{this.state.qty}
+                    <i class="fa fa-plus-circle" onClick={this.decrHandler}></i></td>
                     <td>{this.state.qty * this.state.price}</td>
                   </tr>
                 </tbody>

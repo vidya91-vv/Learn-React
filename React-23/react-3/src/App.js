@@ -1,29 +1,26 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './Navbar/Navbar'
-import Home from './Dummy/Home'
-import About from './Dummy/About'
-import Contact from './Dummy/Contact'
-//import Login from './Form/Login'
-//import Login1 from './Form/Login1'
-//import Login2 from './Form/Login2'
-//import Registration  from './Form/Registration'
+import Index from './Home/Index'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import ContactApp from './ContactApp/ContactApp'
+
 
  class App extends Component {
   render(){
   return (
-    <>
+    <div>
 
     <Router>
     <Navbar />
     <Routes>
-      <Route path="/home" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contact" element={<ContactApp />} />
+      <Route path="/Home" element={<Index />} />
+      
+      
     </Routes>
     </Router>
 
-    </>)
+    </div>)
   }
  }
  export default App

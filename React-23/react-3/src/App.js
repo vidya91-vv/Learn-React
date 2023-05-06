@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar/Navbar'
-import Index from './Home/Index'
+import Message from './Hooks/Message'
+import Counter1 from './Hooks/Counter1'
+//import Index from './Home/Index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import ContactApp from './ContactApp/ContactApp'
+
+
+//import ContactApp from './ContactApp/ContactApp'
 
 
  class App extends Component {
@@ -11,13 +15,11 @@ import ContactApp from './ContactApp/ContactApp'
     <div>
 
     <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/contact" element={<ContactApp />} />
-      <Route path="/Home" element={<Index />} />
-      
-      
-    </Routes>
+       <Navbar />
+       <Routes>
+           <Route path="/useState" element={<Message />} />
+           <Route path="/counter1" element={<Counter1 />} />
+       </Routes>
     </Router>
 
     </div>)

@@ -5,11 +5,12 @@ class Navbar extends Component {
      render() {
        return(
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-          <Link to="/index" className="navbar-brand">React Contact App</Link>
+          <Link to="/index" className="navbar-brand">React Hooks Example</Link>
           <div className="navbar-nav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <link to="/contact" className="nav-link">Contact</link>
+                <Link to="/useState" className="nav-link">useState Ex</Link>
+                <Link to="/counter1" className="nav-link">Product</Link>
               </li>
             </ul>
           </div>

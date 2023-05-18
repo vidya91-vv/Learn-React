@@ -1,28 +1,23 @@
-import React, { Component } from 'react'
-import Navbar from './Navbar/Navbar'
-import Message from './Hooks/Message'
-import Counter1 from './Hooks/Counter1'
-//import Index from './Home/Index'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Navbar from './Navbar/Navbar'
+import ProductList from './Products/ProductList'
+import CreateProduct from './Products/CreateProduct'
 
-
-//import ContactApp from './ContactApp/ContactApp'
-
-
- class App extends Component {
-  render(){
+const App = () => {
+  
   return (
     <div>
 
     <Router>
        <Navbar />
        <Routes>
-           <Route path="/useState" element={<Message />} />
-           <Route path="/counter1" element={<Counter1 />} />
+           <Route path="/products" element={<ProductList />} />
+           <Route path="/creat" element={<CreateProduct />} />
        </Routes>
     </Router>
 
     </div>)
   }
- }
+ 
  export default App
